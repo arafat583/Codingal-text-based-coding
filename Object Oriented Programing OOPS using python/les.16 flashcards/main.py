@@ -19,6 +19,6 @@ while True:
     if option:
         break 
 
-print("\Your flashcards")
+print("/Your flashcards")
 for i in flash:
      print(">", i)    
