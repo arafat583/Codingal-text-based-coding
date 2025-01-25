@@ -20,13 +20,8 @@ def calculate():
     rate = float(entry_rate.get())
     time = float(entry_time.get())
     
-
     simple_interest = (principal * rate * time) / 100
-    
-
     compound_interest = principal * ((1 + rate / 100) ** time) - principal
-    
-
     result_label.config(text=f"Simple Interest: {simple_interest:.2f}\nCompound Interest: {compound_interest:.2f}")
 
 
