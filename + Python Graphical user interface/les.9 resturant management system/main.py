@@ -37,7 +37,15 @@ class ResturantOrderManagement:
             currency_dropdown.current(0)
             self.currency_var.trace('w', self.update_menu_prices)
 
-            
+            order_button.grid(row=len(self.menu_items)+ 2,columnspan=3,padx=10,pady=10)
 
+         def setup_background(self, root):
+                bg_width, bg_height = 800, 600
+                canvas = tk.Canvas(root, width=bg_width, height = bg_height)
+                canvas.pack()
+                original_image = tk.PhotoImage(file="____________________INSERT FILE_________________")
+                background_image = original_image.subsample( original_image.width() // bg_width, original_image.height() // bg_height)
+
+          
 
 
